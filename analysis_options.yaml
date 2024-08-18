@@ -1,1 +1,9 @@
 include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true
+    eol_at_end_of_file: true
+    prefer_int_literals: true
+    prefer_relative_imports: true
+    prefer_single_quotes: true

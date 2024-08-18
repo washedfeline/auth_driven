@@ -1,6 +1,12 @@
+import 'modules/auth/data/services/auth_service.dart';
+import 'modules/auth/presentation/views/login_screen.dart';
 import 'package:flutter/material.dart';
 
+late final AuthService authService;
+
 void main() {
+  authService = AuthService();
+
   runApp(const MainApp());
 }
 
@@ -10,11 +16,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      title: 'Auth Driven',
+      home: LoginScreen(),
     );
   }
 }
